@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn
+{
+    @apply rounded-md uppercase  font-bold cursor-pointer tracking-wider;
+}
