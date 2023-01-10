@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booklog</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css"/>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="C:\Users\Walker\femi\booklog\src\font\css\font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,14 +17,12 @@
     background-repeat: no-repeat;
     height: 1024px;
     width: 100%;
-    left: 0px;
-    top: 0px;
     border-radius: 0px;
     filter: blur();
 }
 
 .amazon{
-    background-image: url(img/delivey\ 4\ 1.png); 
+    background-image: url(img/Rectangle\ 26.png); 
     background: rgba(217, 217, 217, 0.3);
 }
 .rectangle_25{
@@ -67,36 +67,53 @@ border-radius: 10px;
 }
 </style>
 
-<!-- Start Ope -->
+<!-- Start Ope flex flex-row text-2xl justify-between mx-[97.49px] pt-[37.05px] pb-[37.05px]
+float-right justify-between space-x-[40px]  md:flex md:justify-end-->
 <body class="bg-gray-400 ">
 
 <!-- Nav Start -->    
- <nav class=" gray_nv   ">
-    <div class="flex flex-row text-2xl justify-between mx-[97.49px] pt-[37.05px] pb-[37.05px] ">
+ <nav class="  ">
+    <div class=" fixed bg-[#2E3E55CC] opacity-80 shadow-md  z-50 w-full flex justify-between items-center h-24 mx-auto px-4 ">
         <div><img src="img/book-22 2.png" alt="logo"  class="w-9 h-9   object-cover rounded-lg "></div>
-        <div class="flex float-right justify-between space-x-[40px] text-white md:flex md:justify-end">
-        <div><a href="#" class="border-b-blue-400">Contact Us</a></div>
-        <div><a href="#"></a>Track Item</a></div>
-        <div><a href="#"></a>Login</a></div>
-        <div><a href="#"></a>Register</a></div>
-        <i class="fa fa-camera-retro"></i> 
-    </div>  
+    <ul class="md:flex  md:text-2xl text-white font-poppins cursor-pointer ">
+        <li><a href="#" class="p-4">Contact Us</a></li>
+        <li><a href="#" class="p-4"></a>Track Item</a></li>
+        <li><a href="#" class="p-4"></a>Login</a></li>
+        <li><a href="#" class="p-4"></a>Register</a></li>
+    </ul>
+
+    <!--------smaller nav-->
+    <div class="px-4 bg-[#2E3E55CC] opacity-80 cursor-pointer text-2xl text-white font-poppins hidden py-1 ">
+            <div class="px-4 cursor-pointer md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </div>
+          <ul class="pt-4">
+            <li><a href="#" class="p-4 m-4">Contact Us</a></li>
+            <li><a href="#" class="p-4"></a>Track Item</a></li>
+            <li><a href="#" class="p-4"></a>Login</a></li>
+            <li><a href="#" class="p-4"></a>Register</a></li>
+        </ul>
+    </div>
+    
     </div>
 </nav>
 <!-- Nav End -->
 
 <!-- Hero Section Start -->
 <div class="hero px-8">
-    <div class="flex flex-row  justify-around items-center ">
-        <div class="flex flex-col justify-center text-[64px] text-white letter-0.3">
-    <div class="">Find Your Prefered Logistic Company.</div>
-        <div class="text-[48px]">From pickup to logistics we connect you to a 
+    <div class="md:flex md:flex-row  justify-around items-center  pl-7 pr-7">
+        <div class="flex flex-col justify-center md:text-[64px] text-white font-body letter-0.3">
+    <div class="">Find Your Prefered Logistic  Company.</div>
+        <div class="md:text-[48px] ">From pickup to logistics we connect you to a 
          dispatch Company</div>
         </div>
         
     <!-- form start  bg-white rounded-md mt-[14.9px] mb-[14.9px] text-[20px] mr-[101px] overflow-hidden -->
-         <div class="rectangle_25 mt-[136.19] shadow-md">
-            <form action="" class="px-[26px] pt-[36.05px] pb-[82.89px] ">
+         <div class="rectangle_25 mt-[136.19] shadow-md  w-auto">
+            <form action="" class="px-[26px] pt-[36.05px] pb-[82.89px] font-poppins ">
                 <label for="email">Email:</label><br>
                 <input type="email" name="mail" id="mail" class="hover:border-blue-400 bg-form_bg border-black rectangle_7 mt-4 "><br>
                 
@@ -120,34 +137,34 @@ border-radius: 10px;
 <!-- Hero Section End -->
 
 <!-- Update Item Start -->
-<div class="bg-white justify-center items-center align-middle flex flex-row h-[985.41]">
+<div class="bg-white md:justify-center items-center align-middle md:flex md:flex-row h-[985.41] ">
     <div><img src="img/location-tracking 1 (1).png" class="align-bottom"></div>
     <div class="flex flex-col">
-    <div class="text-[24px] items-center align-middle font-semibold">GET UPDATE 
-         <br><span class="text-[32px] font-bold mt-4">TRACK YOUR ITEM</span>
-         <br>_________________________</div>
-     <div><button class="bg-orange_btn text-white rounded-md text-2xl p-4 mt-6">CHECK NOW</button></div>
+    <div class="text-[24px] items-center align-middle font-bold">GET UPDATE 
+         <br><span class="text-[32px] font-poppins mt-4">TRACK YOUR ITEM</span>
+         <br><span class="">___________________</span></div>
+     <div><button class="bg-orange_btn text-white rounded-md font-poppins md:text-2xl p-4 mt-6">CHECK NOW</button></div>
     </div>
     </div>
 
 <!-- Update Item End -->
 
 <!-- Interested In Partnering Start -->
-<div class="flex flex-row justify-between text-white mx-[104px] pt-3">
-<div class="flex flex-col mt-[117.46px] mb-[40px]">
-    <div class="text-[30px]">INTERESTED IN PARTNERING WITH BOOK LOGISTICS?</div>
+<div class="md:flex md:flex-row justify-between text-white mx-[104px] pt-3">
+<div class="flex flex-col mt-[117.46px] mb-[40px] font-body">
+    <div class="text-[30px] ">INTERESTED IN PARTNERING WITH BOOK LOGISTICS?</div>
 <div class="font-light mt-4 text-[20px]">WE ARE READY TO ASSIST YOU WITH YOUR ORDERS</div>
 </div>
-<div class="mt-[126px] mb-[61px]"><button class="bg-orange_btn text-white rounded-md text-2xl p-4">GET IN TOUCH</button></div>
+<div class="mt-[126px] mb-[61px] font-poppins"><button class="bg-orange_btn text-white rounded-md text-2xl p-4">GET IN TOUCH</button></div>
 </div>
 <!-- Interested In Partnering End -->
 
 <!-- Order Start -->
-<div class="amazon flex flex-row justify-between text-[20px]">
-    <div class="flex flex-row-reverse pt-[57.48px] ">
-        <div class="flex flex-col text-[25px] text-white font-thin">
+<div class="amazon md:flex md:flex-row items-center md:justify-between text-[20px]">
+    <div class="md:flex md:flex-row-reverse md:mx-[104px] pt-[57.48px] ">
+        <div class="flex flex-col text-[25px] ml-5 pt-[40.05px] text-white font-thin">
      <ul class=" ">
-        <li> <svg  class="w-4"
+        <li> <svg  class="w-4 "
             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -177,7 +194,7 @@ border-radius: 10px;
 
                 <label for="email">Message:</label><br>
                 <textarea name="details" id="" cols="30" rows="10" placeholder="More Details for Pickup" class="rounded-md mb-4 p-4 rectangle_29"></textarea><br>
-                <input type="submit" value="Send" class="bg-orange_btn btn text-white  text-2xl p-4 w-[210px] h-[61.87] mt-[86.24px] ">
+                <input type="submit" value="Send" class="bg-orange_btn btn text-white font-poppins text-2xl p-4 w-[210px] h-[61.87] mt-[86.24px] ">
             
             </form>
     </div>
@@ -187,35 +204,43 @@ border-radius: 10px;
 <!-- Order End -->
 
 <!-----footer------->
-<div class="flex ">
-    <div class="m-4">
-        <div>
-            <img src="img/book-22 3 (1).png" alt="footer_logo" class="w-13 h-13 mt-12">
+<div class="items-center md:m-4 ">
+    <div class="md:flex md:flex-row justify-between">
+        <div class="m-4">
+            <div>
+                <img src="img/book-22 3 (1).png" alt="footer_logo" class="w-[200px] h-[200px]  mt-12 ml-3 filter rounded-[50px]">
+            </div>
+            <div class="gray-400">
+                Lets get to meet your various social platform<br>
+                <span class="pt-2">We are ready to be of assistance</span><br>
+            </div>
         </div>
-        <div class="gray-400">
-            Lets get to meet your various social platform<br>
-            <span class="pt-2">We are ready to be of assistance</span><br>
-            <span class="mt-10">Privacy policy <a href="#">Contact</a> Terms & Conditions</span>
+        <div class="mt-24 mr-3">
+            <div class=" ">
+    
+    
+                <ul class="flex mr-3 mt-7">
+                    <li><i class="fa fa-facebook p-4"  ></i>facebook</li>
+                    <li><i class="fa fa-whatsapp p-4"></i>whatsapp</li>
+                    <li><i class="fa fa-google-plus p-4"></i>google</li>
+                    <li><i class="fa fa-instagram p-4" ></i>instagram</li>
+                </ul>
+            </div>
+
         </div>
     </div>
-    <div>
+
+    <div class="md:flex md:flex-row m-4 md:p-4 md:justify-between">
         <div>
-
-
-            <ul>
-                <li><i class="fa fa-facebook" aria-hidden="true"></i>facebook</li>
-                <li><i class="fa fa-whatsapp"></i></li>
-                <li><i class="fa fa-google-plus"></i></li>
-                <li><i class="fa fa-instagram" ></i></li>
-            </ul>
+            Privacy policy <span class="text-[#DF6E1E]">contact</span> Terms & Conditions
         </div>
-        <div class="relative top-5">Design by Booklogistics&copy;&nbsp; 2021 All Right Reserved&nbsp;</div>
+        <div class=" ">Design by <span class="text-[#DF6E1E]">Booklogistics</span>&copy;&nbsp; 2021 All Right Reserved&nbsp;</div>
     </div>
 </div>
 
 
 
-<!-- End Ope -->
+<!-- End walker -->
 
 
 
