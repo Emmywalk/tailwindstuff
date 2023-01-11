@@ -11,6 +11,9 @@ module.exports = {
         gray_nv: " rgba(46, 62, 85, 0.8)"
       }
     },
+    fontFamily:{
+      body:['Bodoni Moda','Poppins']
+    }
   },
   plugins: [],
 }
